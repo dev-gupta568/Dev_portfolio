@@ -6,7 +6,6 @@ const footerLinks = [
   ["Skills", "#skills"],
   ["Projects", "#projects"],
   ["Experience", "#experience"],
-  ["Education", "#education"],
   ["Contact", "#contact"],
 ];
 
@@ -25,7 +24,7 @@ function Footer() {
           </div>
           <div className="footer-connect">
             <h2>Connect</h2>
-            <a href={profile.github || "https://github.com/dev-gupta568/HTML-CSS-Javascript-project.git"} target="_blank" rel="noreferrer"><Github size={16} /> GitHub <ArrowUpRight size={13} /></a>
+            <a href={profile.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub <ArrowUpRight size={13} /></a>
             <a href={profile.linkedin || "https://www.linkedin.com/in/dev-gupta-1676bb245"} target="_blank" rel="noreferrer"><Linkedin size={16} /> LinkedIn <ArrowUpRight size={13} /></a>
             <a href={emailHref}><Mail size={16} /> Email</a>
           </div>

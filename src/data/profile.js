@@ -5,7 +5,7 @@ export const profile = {
     "I am a motivated BCA fresher focused on frontend development and building practical, responsive web applications.",
   location: "Delhi NCR, India",
   email: "[gupdev4@gmail.com]",
-  github: "https://github.com/dev-gupta568/HTML-CSS-Javascript-project.git",
+  github: "https://github.com/dev-gupta568",
   linkedin: "https://www.linkedin.com/in/dev-gupta-1676bb245",
   resumePath: "/resume.pdf",
 };

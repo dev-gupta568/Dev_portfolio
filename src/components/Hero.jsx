@@ -18,7 +18,7 @@ function Hero() {
             <a className="button button-quiet" href="#contact">Contact Me</a>
           </div>
           <div className="social-row" aria-label="Contact and social links">
-            <a href={profile.github || "https://github.com/dev-gupta568/HTML-CSS-Javascript-project.git"} target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">
               <Github size={17} />
             </a>
             <a href={profile.linkedin || "https://www.linkedin.com/in/dev-gupta-1676bb245"} target="_blank" rel="noreferrer" aria-label="LinkedIn profile">

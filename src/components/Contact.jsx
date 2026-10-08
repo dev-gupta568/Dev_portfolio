@@ -48,7 +48,7 @@ function Contact() {
             <div><span className="contact-detail-icon"><MapPin size={16} /></span><div><span>Location</span><strong>{profile.location}</strong></div></div>
           </div>
           <div className="contact-socials">
-            <a href={profile.github || "https://github.com/dev-gupta568/HTML-CSS-Javascript-project.git"} target="_blank" rel="noreferrer"><Github size={16} /> GitHub</a>
+            <a href={profile.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub</a>
             <a href={profile.linkedin || "https://www.linkedin.com/in/dev-gupta-1676bb245"} target="_blank" rel="noreferrer"><Linkedin size={16} /> LinkedIn</a>
           </div>
         </div>
