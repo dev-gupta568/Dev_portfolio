@@ -1,18 +1,18 @@
 /* Base tokens, reset, background and shared controls */
 :root {
-      color-scheme: light;
-      --bg: #f6f7ff;
-      --fg: #10122b;
-      --mut: #53566e;
-      --acc: #5a3dff;
-      --acc2: #0a84ff;
-      --card: rgba(255,255,255,.62);
-      --line: rgba(25,27,64,.13);
-      --b1: #bcb2ff;
-      --b2: #9bd5ff;
-      --b3: #ffcbeb;
-      --glass: rgba(255,255,255,.56);
-      --shadow: 0 25px 80px rgba(48,44,100,.12);
+  color-scheme: dark;
+  --bg: #060b14;
+  --fg: #edf3ff;
+  --mut: #9da8c2;
+  --acc: #8b7bff;
+  --acc2: #57c7ff;
+  --card: rgba(11,17,28,.72);
+  --line: rgba(148,163,184,.17);
+  --b1: #8b7bff;
+  --b2: #57c7ff;
+  --b3: #ff7ac6;
+  --glass: rgba(12,18,30,.58);
+  --shadow: 0 25px 80px rgba(1,4,10,.45);
       --ease: cubic-bezier(.22,1,.36,1);
       font-family: "Space Grotesk", system-ui, sans-serif;
       background: var(--bg);

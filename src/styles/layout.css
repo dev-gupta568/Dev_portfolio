@@ -24,7 +24,7 @@ h1 { max-width: 1080px; margin: 0; font-size: clamp(60px,10.7vw,154px); font-wei
       transition: background .25s ease, box-shadow .25s ease;
       pointer-events: auto;
     }
-.nav.scrolled { background: rgba(255,255,255,.82); box-shadow: 0 12px 42px rgba(32,34,81,.13); }
+.nav.scrolled { background: rgba(10,16,29,.82); box-shadow: 0 12px 42px rgba(1,4,10,.38); }
 
 .brand { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 700; letter-spacing: -.06em; white-space: nowrap; }
 

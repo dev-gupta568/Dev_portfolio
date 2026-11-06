@@ -10,9 +10,9 @@
 .honeypot { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; }
 .field { min-width: 0; display: grid; gap: 8px; }
 .field label { color: var(--fg); font-size: 12px; font-weight: 600; }
-.field input, .field textarea { width: 100%; min-width: 0; min-height: 52px; padding: 14px 15px; border: 1px solid var(--line); border-radius: 11px; outline: none; color: var(--fg); background: rgba(255,255,255,.55); font: inherit; font-size: 14px; line-height: 1.5; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
+.field input, .field textarea { width: 100%; min-width: 0; min-height: 52px; padding: 14px 15px; border: 1px solid var(--line); border-radius: 11px; outline: none; color: var(--fg); background: rgba(11,17,28,.8); font: inherit; font-size: 14px; line-height: 1.5; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
 .field textarea { min-height: 145px; resize: vertical; }
-.field input:focus, .field textarea:focus { border-color: var(--acc); background: #fff; box-shadow: 0 0 0 4px color-mix(in srgb,var(--acc) 16%,transparent); }
+.field input:focus, .field textarea:focus { border-color: var(--acc); background: rgba(15,23,42,.95); box-shadow: 0 0 0 4px color-mix(in srgb,var(--acc) 16%,transparent); }
 .field input[aria-invalid="true"], .field textarea[aria-invalid="true"] { border-color: #c62848; }
 .field-error { min-height: 0; color: #a51f3b; font-size: 11px; line-height: 1.45; }
 .field-error:not(:empty) { min-height: 15px; }
