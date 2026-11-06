@@ -1,0 +1,77 @@
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.has-cursor, html.has-cursor body, html.has-cursor a, html.has-cursor button { cursor: none !important; }
+  html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
+  .cursor { position: fixed; inset: 0; z-index: 1000; display: block; pointer-events: none; }
+  .cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; display: block; border-radius: 50%; opacity: 0; transition: opacity .18s ease, width .28s var(--ease), height .28s var(--ease), background .25s ease, border-color .25s ease; }
+  .cursor-dot { width: 5px; height: 5px; background: var(--acc); transform: translate(-50%, -50%); }
+  .cursor-ring { width: 34px; height: 34px; border: 1px solid color-mix(in srgb, var(--acc) 72%, transparent); transform: translate3d(var(--cx, -100px), var(--cy, -100px), 0) translate(-50%, -50%); }
+  .cursor-dot.visible, .cursor-ring.visible { opacity: 1; }
+  .cursor-ring.hover { width: 60px; height: 60px; border-color: var(--acc2); background: color-mix(in srgb, var(--acc) 12%, transparent); }
+}
+
+@media (max-width: 760px) {
+  .wrap { width: min(100% - 40px, 600px); }
+  .nav { width: calc(100% - 28px); min-height: 58px; padding-left: 15px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 10px; }
+  .nav-cta { min-height: 38px; padding-inline: 14px; font-size: 10px; }
+  .hero { min-height: max(760px, 100svh); padding-top: 160px; }
+  .hero-bottom { grid-template-columns: 1fr; gap: 20px; }
+  .hero-note { padding: 0; }
+  .hero-orbit { top: 52%; right: -30%; opacity: .4; }
+  .hero-index { right: 4%; bottom: -30px; }
+  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-aside { max-width: 540px; padding: 0; }
+  .projects-heading { align-items: flex-start; flex-direction: column; gap: 15px; }
+  .project-card { min-height: 365px; }
+  .project-art { min-height: 205px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 34px; }
+}
+
+@media (max-width: 540px) {
+  .wrap { width: calc(100% - 36px); }
+  .nav-shell { top: max(10px, env(safe-area-inset-top)); }
+  .nav { width: calc(100% - 20px); min-height: 54px; }
+  .nav-links { position: absolute; top: calc(100% + 10px); left: 10px; right: 10px; padding: 17px; display: none; flex-wrap: wrap; justify-content: center; border: 1px solid var(--line); border-radius: 20px; background: var(--glass); -webkit-backdrop-filter: blur(22px); backdrop-filter: blur(22px); }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 8px; font-size: 12px; }
+  .nav-cta { min-height: 36px; padding-inline: 12px; }
+  .menu-button { display: grid; }
+  .hero { min-height: max(760px, 100svh); padding-top: 145px; padding-bottom: 90px; }
+  h1 { font-size: clamp(52px, 13.7vw, 76px); }
+  .hero-tag { min-height: 31px; margin-bottom: 29px; font-size: 8px; }
+  .hero-bottom { margin-top: 25px; }
+  .hero-copy { max-width: 360px; font-size: 14px; }
+  .hero-actions { margin-top: 19px; }
+  .button { min-height: 46px; padding-inline: 16px; font-size: 11px; }
+  .hero-orbit { top: 53%; right: -47%; width: 75vw; opacity: .32; }
+  .hero-index { bottom: -27px; font-size: 7px; }
+  .scroll-cue { bottom: 25px; white-space: nowrap; }
+  .section { padding-block: 85px; }
+  .section-heading h2 { font-size: clamp(43px, 12vw, 64px); }
+  .about-copy { font-size: clamp(23px, 7vw, 34px); }
+  .marquee-section { padding-block: 19px; }
+  .marquee-word { font-size: 27px; }
+  .project-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 35px; }
+  .project-card { min-height: 360px; }
+  .project-art { min-height: 220px; }
+  .contact-section { padding-top: 20px; }
+  .footer-row { align-items: flex-start; flex-direction: column; }
+  .footer-links { flex-wrap: wrap; }
+  .field input, .field textarea { font-size: 16px; }
+}
+
+@media (max-width: 360px) {
+  .wrap { width: calc(100% - 28px); }
+  h1 { font-size: 12.8vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .loader, .cursor { display: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .hero-line .letter { opacity: 1 !important; transform: none !important; }
+  .about-copy .word { opacity: 1 !important; }
+  .project-card, .magnetic-button, .blob { transform: none !important; }
+  #particles { display: none; }
+}

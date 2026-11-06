@@ -1,33 +1,24 @@
-import { Code2, Computer, Laptop, Wrench } from "lucide-react";
-import { skillGroups } from "../data/skills.js";
+import React from "react";
 
-const icons = [Code2, Laptop, Wrench, Computer];
+const skills = [
+  "Creative code",
+  "React",
+  "Motion design",
+  "JavaScript",
+  "Three.js",
+  "Digital craft",
+];
 
 function Skills() {
+  const renderSkills = () => skills.map((skill) => (
+    <span className="marquee-word" key={skill}>{skill} <i>✳</i></span>
+  ));
+
   return (
-    <section className="section-pad" id="skills" aria-labelledby="skills-title">
-      <div className="container">
-        <div className="section-heading">
-          <span className="eyebrow">SKILLS & TOOLKIT</span>
-          <h2 id="skills-title">Foundations for <span className="text-accent">getting things done.</span></h2>
-          <p>A growing, hands-on toolkit across frontend development and programming.</p>
-        </div>
-        <div className="skills-grid">
-          {skillGroups.map((group, index) => {
-            const Icon = icons[index];
-            return (
-              <article className="skill-card" key={group.title}>
-                <div className="skill-card-heading"><span className="card-icon"><Icon size={19} /></span><span className="skill-count">{String(group.skills.length).padStart(2, "0")} skills</span></div>
-                <h3>{group.title}</h3>
-                <p>{group.description}</p>
-                <ul className="skill-badges">
-                  {group.skills.map((skill) => <li key={skill}>{skill}</li>)}
-                </ul>
-              </article>
-            );
-          })}
-        </div>
-        {/* <p className="placeholder-note">Skill lists are editable in <code>src/data/skills.js</code>. Add proficiency levels only when you can confidently support them.</p> */}
+    <section className="marquee-section" id="skills" aria-label="Skills and technologies">
+      <div className="marquee" id="marquee">
+        <div className="marquee-group">{renderSkills()}</div>
+        <div className="marquee-group" aria-hidden="true">{renderSkills()}</div>
       </div>
     </section>
   );
