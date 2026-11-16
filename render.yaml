@@ -1,0 +1,27 @@
+# Render blueprint for the Dev Portfolio contact API
+# Deploy this file at https://dashboard.render.com/blueprints
+# Or run: render blueprint deploy render.yaml
+
+services:
+  - type: web
+    name: dev-portfolio-api
+    env: node
+    region: oregon
+    plan: free
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm run server
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB_NAME
+        value: dev_portfolio
+      - key: PORT
+        value: "3001"
+      - key: ALLOWED_ORIGIN
+        sync: false
+        # Set this to your deployed frontend URL after Vercel deploy
+        value: http://localhost:5173
+      - key: TRUST_PROXY
+        value: "true"
+    healthCheckPath: /api/health
