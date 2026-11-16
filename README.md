@@ -69,6 +69,7 @@ MONGODB_URI=your_mongodb_connection_string
 For business inquiries or collaborations, use the contact form on the website or reach out through the configured contact details in the project.
 
 ## License
-Live Demo:- developer-devportfolio.netlify.app
+Live Demo:- https://developer-devportfolio.netlify.app/
+
 
 This project is for personal portfolio use and may be customized for your own profile and branding.
